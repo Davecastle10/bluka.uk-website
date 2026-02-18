@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    position: relative;
+    background-color: #8daa9d;
+}
+.page-container {
+    position:relative;
+    min-height: 100;
+}
+header, footer {
+    background: #522b47;
+    color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    height: 5rem;
+    bottom: 0;
+    width: 100%;
+}
+
+.container {
+    display: flex; /* Enable flexbox */
+    padding: 0px 0px 5rem 0px;
+}
+
+.links-column {
+    flex: 1; /* This column takes up one share of space */
+    max-width: 250px;
+    background-color: #f0f0f0; /* Light background for visibility */
+    padding: 10px 10px 0px 10px; /* t r b l Space between rows */
+    margin: 20px 10px 20px 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    /*border-right: 2px solid #ccc; /* Optional border between columns */
+}
+
+.data-column {
+    flex: 3; /* This column takes up three shares of space */
+    margin: 0px 20px 0px 0px;
+    /*padding: 20px; /* Add some padding */
+}
+
+.data-row {
+    padding: 10px 10px 10px 10px; /* t r b l Space between rows */
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ddd; /* Light border between rows */
+    margin: 20px 0px 20px 10px;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+a {
+    text-decoration: none; /* Remove underline from links */
+    color: #007BFF; /* Link color */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+
+@media only screen and (max-width: 50vh) {
+    .container {
+    display: flex; /* Enable flexbox */
+    flex-direction: column;
+    padding: 0px 0px 5rem 0px;
+    }
+
+    .links-column {
+        /*flex: 0; /* This column takes up one share of space */
+        background-color: #f0f0f0; /* Light background for visibility */
+        padding: 10px 10px 10px 10px; /* t r b l Space between rows */
+        margin: 20px 20px 20px 20px;
+        border-radius: 5px;
+        width: 100%;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+        /*border-right: 2px solid #ccc; /* Optional border between columns */
+    }
+
+    .data-column {
+        /*flex: 0; /* This column takes up three shares of space */
+        margin: 0px 20px 20px 20px;
+        width: 100%;
+        /*padding: 20px; /* Add some padding */
+    }
+
+    .data-row {
+        padding: 10px 10px 10px 10px; /* t r b l Space between rows */
+        background-color: #f0f0f0;
+        border-bottom: 1px solid #ddd; /* Light border between rows */
+        margin: 20px 0px 0px 0px;
+        border-radius: 5px;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    }
+}
