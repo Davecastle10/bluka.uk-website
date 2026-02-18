@@ -4,6 +4,6 @@ services:
     container_name: mysite
     restart: unless-stopped
     ports:
-      - "8081:80"
+      - "8082:80"
     volumes:
       - .:/usr/share/nginx/html:ro
