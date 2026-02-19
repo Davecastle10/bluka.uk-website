@@ -10,10 +10,6 @@ body {
     position: relative;
     background-color: #8daa9d;
 }
-.page-container {
-    position:relative;
-    min-height: 100;
-}
 
 .centre {
   display: block;
@@ -21,6 +17,13 @@ body {
   margin-right: auto;
   width: 50%;
 }
+
+.page-container {
+    position:relative;
+    min-height: 100;
+}
+
+
 
 header, footer {
     background: #522b47;
